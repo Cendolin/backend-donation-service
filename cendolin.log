@@ -1,0 +1,1078 @@
+2025-06-11T07:10:44.336+08:00  WARN 2704 --- [cendolin-donation-service] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:10:53.575+08:00  INFO 2704 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:10:54.399+08:00  INFO 2704 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:10:54.410+08:00  INFO 2704 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:10:54.429+08:00  INFO 2704 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:10:54.473+08:00  INFO 2704 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:10:54.500+08:00  INFO 2704 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:10:54.520+08:00  INFO 2704 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:11:08.691+08:00  INFO 21520 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 21520 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:11:08.693+08:00  INFO 21520 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:11:09.293+08:00  INFO 21520 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:11:09.343+08:00  INFO 21520 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:11:09.983+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:11:09.996+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:11:09.997+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:11:10.052+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:11:10.053+08:00  INFO 21520 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1325 ms
+2025-06-11T07:11:10.227+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:11:10.305+08:00  INFO 21520 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:11:10.342+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:11:10.643+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:11:10.674+08:00  INFO 21520 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:11:10.999+08:00  INFO 21520 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4eac65db
+2025-06-11T07:11:11.000+08:00  INFO 21520 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:11:11.060+08:00  WARN 21520 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:11:11.079+08:00  INFO 21520 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:11:12.048+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:11:12.110+08:00  INFO 21520 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:11:13.296+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:11:13.299+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:11:13.411+08:00  INFO 21520 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6980fa39:0/SimpleConnection@f81bd2c [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=58739]
+2025-06-11T07:11:13.478+08:00  INFO 21520 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 5.148 seconds (process running for 5.734)
+2025-06-11T07:20:29.103+08:00  INFO 21520 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:20:29.496+08:00  INFO 21520 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:20:29.517+08:00  INFO 21520 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:20:29.546+08:00  INFO 21520 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:20:29.606+08:00  INFO 21520 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:20:29.652+08:00  INFO 21520 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:20:29.677+08:00  INFO 21520 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:20:36.008+08:00  INFO 26440 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 26440 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:20:36.010+08:00  INFO 26440 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:20:36.661+08:00  INFO 26440 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:20:36.743+08:00  INFO 26440 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:20:37.399+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:20:37.416+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:20:37.416+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:20:37.475+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:20:37.475+08:00  INFO 26440 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1432 ms
+2025-06-11T07:20:37.685+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:20:37.759+08:00  INFO 26440 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:20:37.803+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:20:38.109+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:20:38.142+08:00  INFO 26440 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:20:38.489+08:00  INFO 26440 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16029e2f
+2025-06-11T07:20:38.490+08:00  INFO 26440 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:20:38.533+08:00  WARN 26440 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:20:38.549+08:00  INFO 26440 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:20:39.645+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:20:39.685+08:00  INFO 26440 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:20:40.929+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:20:40.932+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:20:41.034+08:00  INFO 26440 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#74471600:0/SimpleConnection@213fc7e7 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=58912]
+2025-06-11T07:20:41.086+08:00  INFO 26440 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 5.459 seconds (process running for 5.893)
+2025-06-11T07:20:45.651+08:00  INFO 26440 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:20:45.652+08:00  INFO 26440 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:20:45.654+08:00  INFO 26440 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T07:20:45.698+08:00  WARN 26440 --- [cendolin-donation-service] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:20:47.926+08:00  WARN 26440 --- [cendolin-donation-service] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:22:01.718+08:00  INFO 26440 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:22:01.837+08:00  INFO 26440 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:22:01.838+08:00  INFO 26440 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:22:01.847+08:00  INFO 26440 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:22:01.856+08:00  INFO 26440 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:22:01.858+08:00  INFO 26440 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:22:01.878+08:00  INFO 26440 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:22:06.092+08:00  INFO 25116 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 25116 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:22:06.093+08:00  INFO 25116 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:22:06.631+08:00  INFO 25116 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:22:06.678+08:00  INFO 25116 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:22:07.122+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:22:07.132+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:22:07.132+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:22:07.179+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:22:07.180+08:00  INFO 25116 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
+2025-06-11T07:22:07.309+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:22:07.386+08:00  INFO 25116 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:22:07.416+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:22:07.649+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:22:07.677+08:00  INFO 25116 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:22:07.967+08:00  INFO 25116 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31880efa
+2025-06-11T07:22:07.969+08:00  INFO 25116 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:22:08.002+08:00  WARN 25116 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:22:08.021+08:00  INFO 25116 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:22:08.924+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:22:08.955+08:00  INFO 25116 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:22:09.976+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:22:09.979+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:22:10.075+08:00  INFO 25116 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7b5e5fa:0/SimpleConnection@71077d1 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=58973]
+2025-06-11T07:22:10.153+08:00  INFO 25116 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.431 seconds (process running for 4.816)
+2025-06-11T07:22:14.528+08:00  INFO 25116 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:22:14.528+08:00  INFO 25116 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:22:14.529+08:00  INFO 25116 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:22:14.567+08:00  WARN 25116 --- [cendolin-donation-service] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:22:16.785+08:00  WARN 25116 --- [cendolin-donation-service] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:23:15.327+08:00  INFO 25116 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:23:15.801+08:00  INFO 25116 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:23:15.803+08:00  INFO 25116 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:23:15.812+08:00  INFO 25116 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:23:15.823+08:00  INFO 25116 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:23:15.825+08:00  INFO 25116 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:23:15.852+08:00  INFO 25116 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:23:19.975+08:00  INFO 25316 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 25316 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:23:19.977+08:00  INFO 25316 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:23:20.566+08:00  INFO 25316 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:23:20.614+08:00  INFO 25316 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:23:21.053+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:23:21.063+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:23:21.064+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:23:21.107+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:23:21.107+08:00  INFO 25316 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2025-06-11T07:23:21.249+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:23:21.321+08:00  INFO 25316 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:23:21.353+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:23:21.603+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:23:21.635+08:00  INFO 25316 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:23:21.942+08:00  INFO 25316 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51508029
+2025-06-11T07:23:21.943+08:00  INFO 25316 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:23:21.973+08:00  WARN 25316 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:23:21.993+08:00  INFO 25316 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:23:22.963+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:23:22.999+08:00  INFO 25316 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:23:24.082+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:23:24.085+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:23:24.186+08:00  INFO 25316 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#b21cbbf:0/SimpleConnection@97842a0 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59040]
+2025-06-11T07:23:24.239+08:00  INFO 25316 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.609 seconds (process running for 5.01)
+2025-06-11T07:23:24.503+08:00  INFO 25316 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:23:24.503+08:00  INFO 25316 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:23:24.504+08:00  INFO 25316 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:23:24.543+08:00  WARN 25316 --- [cendolin-donation-service] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:24:05.405+08:00  INFO 25316 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:24:05.668+08:00  INFO 25316 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:24:05.669+08:00  INFO 25316 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:24:05.678+08:00  INFO 25316 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:24:05.690+08:00  INFO 25316 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:24:05.693+08:00  INFO 25316 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:24:05.721+08:00  INFO 25316 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:24:09.729+08:00  INFO 1628 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 1628 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:24:09.731+08:00  INFO 1628 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:24:10.246+08:00  INFO 1628 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:24:10.294+08:00  INFO 1628 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:24:10.686+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:24:10.695+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:24:10.695+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:24:10.744+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:24:10.745+08:00  INFO 1628 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 982 ms
+2025-06-11T07:24:10.863+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:24:10.916+08:00  INFO 1628 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:24:10.944+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:24:11.145+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:24:11.166+08:00  INFO 1628 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:24:11.396+08:00  INFO 1628 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ecb9e17
+2025-06-11T07:24:11.397+08:00  INFO 1628 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:24:11.419+08:00  WARN 1628 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:24:11.434+08:00  INFO 1628 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:24:12.263+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:24:12.291+08:00  INFO 1628 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:24:13.289+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:24:13.292+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:24:13.390+08:00  INFO 1628 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#62682ece:0/SimpleConnection@7e147828 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59088]
+2025-06-11T07:24:13.432+08:00  INFO 1628 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.057 seconds (process running for 4.436)
+2025-06-11T07:24:14.693+08:00  INFO 1628 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:24:14.693+08:00  INFO 1628 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:24:14.696+08:00  INFO 1628 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:24:14.735+08:00  WARN 1628 --- [cendolin-donation-service] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:24:15.870+08:00  WARN 1628 --- [cendolin-donation-service] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:24:16.500+08:00  WARN 1628 --- [cendolin-donation-service] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:24:16.889+08:00  WARN 1628 --- [cendolin-donation-service] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:24:17.437+08:00  WARN 1628 --- [cendolin-donation-service] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:24:42.652+08:00  WARN 1628 --- [cendolin-donation-service] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto)]
+2025-06-11T07:26:34.313+08:00 ERROR 1628 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:105) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.0.jar:3.5.0]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-11T07:28:25.449+08:00  INFO 1628 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:28:25.948+08:00  INFO 1628 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:28:25.951+08:00  INFO 1628 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:28:25.963+08:00  INFO 1628 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:28:25.976+08:00  INFO 1628 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:28:25.983+08:00  INFO 1628 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:28:26.008+08:00  INFO 1628 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:28:32.423+08:00  INFO 5372 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 5372 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:28:32.425+08:00  INFO 5372 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:28:33.089+08:00  INFO 5372 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:28:33.144+08:00  INFO 5372 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:28:33.711+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:28:33.728+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:28:33.728+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:28:33.783+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:28:33.783+08:00  INFO 5372 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1324 ms
+2025-06-11T07:28:33.934+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:28:34.016+08:00  INFO 5372 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:28:34.051+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:28:34.305+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:28:34.333+08:00  INFO 5372 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:28:34.639+08:00  INFO 5372 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@538e74fc
+2025-06-11T07:28:34.639+08:00  INFO 5372 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:28:34.677+08:00  WARN 5372 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:28:34.694+08:00  INFO 5372 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:28:35.695+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:28:35.733+08:00  INFO 5372 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:28:36.870+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:28:36.873+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:28:36.953+08:00  INFO 5372 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7c045627:0/SimpleConnection@3986b56 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59237]
+2025-06-11T07:28:37.002+08:00  INFO 5372 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.936 seconds (process running for 5.349)
+2025-06-11T07:28:38.176+08:00  INFO 5372 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:28:38.176+08:00  INFO 5372 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:28:38.177+08:00  INFO 5372 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:28:38.283+08:00 ERROR 5372 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:105) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.0.jar:3.5.0]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-11T07:29:44.501+08:00  INFO 5372 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:29:44.604+08:00  INFO 5372 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:29:44.606+08:00  INFO 5372 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:29:44.613+08:00  INFO 5372 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:29:44.622+08:00  INFO 5372 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:29:44.624+08:00  INFO 5372 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:29:44.650+08:00  INFO 5372 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:29:53.164+08:00  INFO 1640 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 1640 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:29:53.165+08:00  INFO 1640 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:29:53.723+08:00  INFO 1640 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:29:53.773+08:00  INFO 1640 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:29:54.203+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:29:54.212+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:29:54.213+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:29:54.266+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:29:54.266+08:00  INFO 1640 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1071 ms
+2025-06-11T07:29:54.392+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:29:54.465+08:00  INFO 1640 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:29:54.497+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:29:54.734+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:29:54.764+08:00  INFO 1640 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:29:55.053+08:00  INFO 1640 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@538e74fc
+2025-06-11T07:29:55.055+08:00  INFO 1640 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:29:55.085+08:00  WARN 1640 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:29:55.102+08:00  INFO 1640 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:29:56.010+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:29:56.044+08:00  INFO 1640 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:29:56.994+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:29:56.997+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:29:57.089+08:00  INFO 1640 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#65528bcf:0/SimpleConnection@3986b56 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59297]
+2025-06-11T07:29:57.133+08:00  INFO 1640 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.309 seconds (process running for 4.702)
+2025-06-11T07:30:01.088+08:00  INFO 1640 --- [cendolin-donation-service] [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:30:01.088+08:00  INFO 1640 --- [cendolin-donation-service] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:30:01.089+08:00  INFO 1640 --- [cendolin-donation-service] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:30:01.242+08:00 ERROR 1640 --- [cendolin-donation-service] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:105) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.0.jar:3.5.0]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-11T07:51:15.117+08:00  INFO 1640 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:51:15.655+08:00  INFO 1640 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:51:15.697+08:00  INFO 1640 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:51:15.762+08:00  INFO 1640 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:51:15.884+08:00  INFO 1640 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:51:15.952+08:00  INFO 1640 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:51:15.986+08:00  INFO 1640 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:51:23.493+08:00  INFO 19752 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 19752 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:51:23.495+08:00  INFO 19752 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:51:24.131+08:00  INFO 19752 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:51:24.182+08:00  INFO 19752 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:51:24.654+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:51:24.665+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:51:24.666+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:51:24.720+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:51:24.721+08:00  INFO 19752 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1191 ms
+2025-06-11T07:51:24.873+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:51:24.945+08:00  INFO 19752 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:51:24.975+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:51:25.250+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:51:25.280+08:00  INFO 19752 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:51:25.592+08:00  INFO 19752 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@343d1d25
+2025-06-11T07:51:25.593+08:00  INFO 19752 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:51:25.639+08:00  WARN 19752 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:51:25.656+08:00  INFO 19752 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:51:26.569+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:51:26.611+08:00  INFO 19752 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:51:27.659+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:51:27.662+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:51:27.779+08:00  INFO 19752 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#24caa80:0/SimpleConnection@1dcfbad1 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59744]
+2025-06-11T07:51:27.847+08:00  INFO 19752 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.711 seconds (process running for 5.15)
+2025-06-11T07:51:39.321+08:00  INFO 19752 --- [cendolin-donation-service] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:51:39.322+08:00  INFO 19752 --- [cendolin-donation-service] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:51:39.323+08:00  INFO 19752 --- [cendolin-donation-service] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:51:39.440+08:00 ERROR 19752 --- [cendolin-donation-service] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.math.BigDecimal'. Check configuration for 'amount'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:105) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.0.jar:3.5.0]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-11T07:52:22.963+08:00  INFO 19752 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:52:23.429+08:00  INFO 19752 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:52:23.429+08:00  INFO 19752 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:52:23.435+08:00  INFO 19752 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:52:23.443+08:00  INFO 19752 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:52:23.445+08:00  INFO 19752 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:52:23.471+08:00  INFO 19752 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:52:27.765+08:00  INFO 3540 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 3540 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:52:27.766+08:00  INFO 3540 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:52:28.326+08:00  INFO 3540 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:52:28.375+08:00  INFO 3540 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:52:28.798+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:52:28.810+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:52:28.811+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:52:28.865+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:52:28.865+08:00  INFO 3540 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2025-06-11T07:52:29.008+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:52:29.074+08:00  INFO 3540 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:52:29.104+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:52:29.349+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:52:29.377+08:00  INFO 3540 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:52:29.678+08:00  INFO 3540 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76dc36e5
+2025-06-11T07:52:29.679+08:00  INFO 3540 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:52:29.710+08:00  WARN 3540 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:52:29.727+08:00  INFO 3540 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:52:30.640+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:52:30.672+08:00  INFO 3540 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:52:31.608+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:52:31.610+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:52:31.705+08:00  INFO 3540 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#44d36b56:0/SimpleConnection@36e7b91c [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59801]
+2025-06-11T07:52:31.749+08:00  INFO 3540 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.312 seconds (process running for 4.703)
+2025-06-11T07:52:33.710+08:00  INFO 3540 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:52:33.711+08:00  INFO 3540 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:52:33.712+08:00  INFO 3540 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:52:33.829+08:00 ERROR 3540 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.Currency' validating type 'java.lang.String'. Check configuration for 'currency'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.Currency' validating type 'java.lang.String'. Check configuration for 'currency'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:105) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.0.jar:3.5.0]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-11T07:52:34.972+08:00 ERROR 3540 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.Currency' validating type 'java.lang.String'. Check configuration for 'currency'] with root cause
+
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.Currency' validating type 'java.lang.String'. Check configuration for 'currency'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172) ~[hibernate-validator-8.0.2.Final.jar:8.0.2.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:105) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:67) ~[spring-boot-autoconfigure-3.5.0.jar:3.5.0]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:1431) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:291) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:157) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-11T07:53:32.628+08:00  INFO 3540 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:53:33.390+08:00  INFO 3540 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:53:33.392+08:00  INFO 3540 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:53:33.400+08:00  INFO 3540 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:53:33.408+08:00  INFO 3540 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:53:33.410+08:00  INFO 3540 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:53:33.428+08:00  INFO 3540 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:53:37.236+08:00  INFO 22004 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 22004 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:53:37.238+08:00  INFO 22004 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:53:37.784+08:00  INFO 22004 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:53:37.834+08:00  INFO 22004 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:53:38.246+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:53:38.255+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:53:38.256+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:53:38.305+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:53:38.305+08:00  INFO 22004 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2025-06-11T07:53:38.424+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:53:38.478+08:00  INFO 22004 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:53:38.507+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:53:38.730+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:53:38.753+08:00  INFO 22004 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:53:38.996+08:00  INFO 22004 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a54c92e
+2025-06-11T07:53:38.998+08:00  INFO 22004 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:53:39.024+08:00  WARN 22004 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:53:39.042+08:00  INFO 22004 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:53:39.910+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:53:39.945+08:00  INFO 22004 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:53:40.939+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:53:40.942+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:53:41.045+08:00  INFO 22004 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#b1e63b5:0/SimpleConnection@630a647c [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59863]
+2025-06-11T07:53:41.092+08:00  INFO 22004 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.194 seconds (process running for 4.632)
+2025-06-11T07:53:43.194+08:00  INFO 22004 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:53:44.109+08:00  INFO 22004 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:53:44.110+08:00  INFO 22004 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:53:44.120+08:00  INFO 22004 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:53:44.126+08:00  INFO 22004 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:53:44.128+08:00  INFO 22004 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:53:44.153+08:00  INFO 22004 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:53:48.039+08:00  INFO 19804 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 19804 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:53:48.041+08:00  INFO 19804 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:53:48.567+08:00  INFO 19804 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:53:48.613+08:00  INFO 19804 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:53:49.005+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:53:49.014+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:53:49.015+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:53:49.059+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:53:49.059+08:00  INFO 19804 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2025-06-11T07:53:49.178+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:53:49.226+08:00  INFO 19804 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:53:49.252+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:53:49.460+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:53:49.482+08:00  INFO 19804 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:53:49.710+08:00  INFO 19804 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fb71788
+2025-06-11T07:53:49.711+08:00  INFO 19804 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:53:49.735+08:00  WARN 19804 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:53:49.749+08:00  INFO 19804 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:53:50.542+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:53:50.572+08:00  INFO 19804 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:53:51.580+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:53:51.583+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:53:51.685+08:00  INFO 19804 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#b1e63b5:0/SimpleConnection@42210d27 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59904]
+2025-06-11T07:53:51.732+08:00  INFO 19804 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.046 seconds (process running for 4.428)
+2025-06-11T07:53:53.720+08:00  INFO 19804 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:53:53.720+08:00  INFO 19804 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:53:53.723+08:00  INFO 19804 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:53:53.861+08:00  WARN 19804 --- [cendolin-donation-service] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<id.hanifu.cendolin_donation_service.entities.DonationEntity> id.hanifu.cendolin_donation_service.controllers.DonationController.createDonation(java.lang.String,id.hanifu.cendolin_donation_service.dtos.DonationDto) with 4 errors: [Field error in object 'donationDto' on field 'paymentMethod': rejected value [null]; codes [NotBlank.donationDto.paymentMethod,NotBlank.paymentMethod,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [donationDto.paymentMethod,paymentMethod]; arguments []; default message [paymentMethod]]; default message [Payment Method cannot blank]] [Field error in object 'donationDto' on field 'message': rejected value [null]; codes [NotBlank.donationDto.message,NotBlank.message,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [donationDto.message,message]; arguments []; default message [message]]; default message [Message cannot blank]] [Field error in object 'donationDto' on field 'donatorName': rejected value [null]; codes [NotBlank.donationDto.donatorName,NotBlank.donatorName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [donationDto.donatorName,donatorName]; arguments []; default message [donatorName]]; default message [Donator name cannot blank]] [Field error in object 'donationDto' on field 'donatorEmail': rejected value [null]; codes [NotBlank.donationDto.donatorEmail,NotBlank.donatorEmail,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [donationDto.donatorEmail,donatorEmail]; arguments []; default message [donatorEmail]]; default message [Donator email cannot blank]] ]
+2025-06-11T07:54:36.770+08:00  INFO 19804 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:54:37.146+08:00  INFO 19804 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:54:37.147+08:00  INFO 19804 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:54:37.158+08:00  INFO 19804 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:54:37.167+08:00  INFO 19804 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:54:37.169+08:00  INFO 19804 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:54:37.192+08:00  INFO 19804 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:54:41.221+08:00  INFO 8208 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 8208 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:54:41.222+08:00  INFO 8208 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:54:41.750+08:00  INFO 8208 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:54:41.800+08:00  INFO 8208 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:54:42.214+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:54:42.224+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:54:42.224+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:54:42.272+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:54:42.273+08:00  INFO 8208 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1018 ms
+2025-06-11T07:54:42.384+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:54:42.432+08:00  INFO 8208 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:54:42.457+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:54:42.660+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:54:42.683+08:00  INFO 8208 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:54:42.918+08:00  INFO 8208 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76dc36e5
+2025-06-11T07:54:42.919+08:00  INFO 8208 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:54:42.940+08:00  WARN 8208 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:54:42.956+08:00  INFO 8208 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:54:43.728+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:54:43.757+08:00  INFO 8208 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:54:44.672+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:54:44.674+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:54:44.766+08:00  INFO 8208 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#578ac0be:0/SimpleConnection@97842a0 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=59965]
+2025-06-11T07:54:44.811+08:00  INFO 8208 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 3.928 seconds (process running for 4.32)
+2025-06-11T07:54:46.489+08:00  INFO 8208 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:54:46.490+08:00  INFO 8208 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:54:46.493+08:00  INFO 8208 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-11T07:58:46.659+08:00  INFO 8208 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T07:58:47.333+08:00  INFO 8208 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T07:58:47.348+08:00  INFO 8208 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:58:47.369+08:00  INFO 8208 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:58:47.395+08:00  INFO 8208 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:58:47.411+08:00  INFO 8208 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:58:47.440+08:00  INFO 8208 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:58:52.597+08:00  INFO 21756 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 21756 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T07:58:52.599+08:00  INFO 21756 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:58:53.218+08:00  INFO 21756 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:58:53.270+08:00  INFO 21756 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2025-06-11T07:58:53.734+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:58:53.745+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:58:53.745+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T07:58:53.798+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:58:53.799+08:00  INFO 21756 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1168 ms
+2025-06-11T07:58:53.944+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:58:54.016+08:00  INFO 21756 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T07:58:54.047+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:58:54.329+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:58:54.359+08:00  INFO 21756 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:58:54.686+08:00  INFO 21756 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76dc36e5
+2025-06-11T07:58:54.688+08:00  INFO 21756 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:58:54.729+08:00  WARN 21756 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:58:54.748+08:00  INFO 21756 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T07:58:55.661+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:58:55.700+08:00  INFO 21756 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:58:56.773+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:58:56.777+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T07:58:56.871+08:00  INFO 21756 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4250b0c1:0/SimpleConnection@2cc3b0a7 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=60069]
+2025-06-11T07:58:56.934+08:00  INFO 21756 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.681 seconds (process running for 5.149)
+2025-06-11T07:59:06.035+08:00  INFO 21756 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:59:06.036+08:00  INFO 21756 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:59:06.037+08:00  INFO 21756 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T08:00:14.997+08:00  INFO 21756 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T08:00:15.678+08:00  INFO 21756 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T08:00:15.684+08:00  INFO 21756 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T08:00:15.698+08:00  INFO 21756 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T08:00:15.717+08:00  INFO 21756 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:00:15.730+08:00  INFO 21756 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T08:00:15.766+08:00  INFO 21756 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T08:00:21.092+08:00  INFO 22192 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 22192 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T08:00:21.094+08:00  INFO 22192 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:00:21.683+08:00  INFO 22192 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:00:21.732+08:00  INFO 22192 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-06-11T08:00:22.218+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T08:00:22.230+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:00:22.231+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T08:00:22.280+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:00:22.280+08:00  INFO 22192 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1152 ms
+2025-06-11T08:00:22.427+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:00:22.504+08:00  INFO 22192 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T08:00:22.536+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:00:22.815+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:00:22.848+08:00  INFO 22192 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:00:23.155+08:00  INFO 22192 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@343d1d25
+2025-06-11T08:00:23.156+08:00  INFO 22192 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:00:23.191+08:00  WARN 22192 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:00:23.207+08:00  INFO 22192 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T08:00:24.145+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:00:24.185+08:00  INFO 22192 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:00:25.237+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T08:00:25.239+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T08:00:25.351+08:00  INFO 22192 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#b21cbbf:0/SimpleConnection@4cb641a5 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=60133]
+2025-06-11T08:00:25.418+08:00  INFO 22192 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.672 seconds (process running for 5.085)
+2025-06-11T08:00:33.195+08:00  INFO 22192 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:00:33.196+08:00  INFO 22192 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:00:33.197+08:00  INFO 22192 --- [cendolin-donation-service] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T08:01:02.155+08:00  INFO 22192 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T08:01:02.760+08:00  INFO 22192 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T08:01:02.761+08:00  INFO 22192 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T08:01:02.768+08:00  INFO 22192 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T08:01:02.775+08:00  INFO 22192 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:01:02.777+08:00  INFO 22192 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T08:01:02.801+08:00  INFO 22192 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T08:01:06.931+08:00  INFO 12428 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 12428 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T08:01:06.933+08:00  INFO 12428 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:01:07.463+08:00  INFO 12428 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:01:07.509+08:00  INFO 12428 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2025-06-11T08:01:07.943+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T08:01:07.956+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:01:07.956+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T08:01:08.006+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:01:08.006+08:00  INFO 12428 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2025-06-11T08:01:08.148+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:01:08.226+08:00  INFO 12428 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T08:01:08.253+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:01:08.488+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:01:08.516+08:00  INFO 12428 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:01:08.794+08:00  INFO 12428 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76dc36e5
+2025-06-11T08:01:08.796+08:00  INFO 12428 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:01:08.827+08:00  WARN 12428 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:01:08.845+08:00  INFO 12428 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T08:01:09.726+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:01:09.755+08:00  INFO 12428 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:01:10.802+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T08:01:10.806+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T08:01:10.936+08:00  INFO 12428 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4250b0c1:0/SimpleConnection@2cc3b0a7 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=60197]
+2025-06-11T08:01:10.987+08:00  INFO 12428 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.391 seconds (process running for 4.789)
+2025-06-11T08:01:13.726+08:00  INFO 12428 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:01:13.727+08:00  INFO 12428 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:01:13.728+08:00  INFO 12428 --- [cendolin-donation-service] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T08:02:06.353+08:00  INFO 12428 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T08:02:06.472+08:00  INFO 12428 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T08:02:06.472+08:00  INFO 12428 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T08:02:06.481+08:00  INFO 12428 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T08:02:06.487+08:00  INFO 12428 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:02:06.489+08:00  INFO 12428 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T08:02:06.512+08:00  INFO 12428 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T08:02:10.448+08:00  INFO 12172 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 12172 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T08:02:10.450+08:00  INFO 12172 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:02:11.028+08:00  INFO 12172 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:02:11.077+08:00  INFO 12172 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-06-11T08:02:11.527+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T08:02:11.539+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:02:11.540+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T08:02:11.590+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:02:11.592+08:00  INFO 12172 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1112 ms
+2025-06-11T08:02:11.745+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:02:11.825+08:00  INFO 12172 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T08:02:11.859+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:02:12.105+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:02:12.132+08:00  INFO 12172 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:02:12.412+08:00  INFO 12172 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@343d1d25
+2025-06-11T08:02:12.414+08:00  INFO 12172 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:02:12.448+08:00  WARN 12172 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:02:12.467+08:00  INFO 12172 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T08:02:13.463+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:02:13.497+08:00  INFO 12172 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:02:14.429+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T08:02:14.432+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T08:02:14.534+08:00  INFO 12172 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#b21cbbf:0/SimpleConnection@4cb641a5 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=60268]
+2025-06-11T08:02:14.578+08:00  INFO 12172 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 4.475 seconds (process running for 4.893)
+2025-06-11T08:02:19.390+08:00  INFO 12172 --- [cendolin-donation-service] [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:02:19.390+08:00  INFO 12172 --- [cendolin-donation-service] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:02:19.391+08:00  INFO 12172 --- [cendolin-donation-service] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T08:09:54.863+08:00  INFO 12172 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T08:09:55.021+08:00  INFO 12172 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T08:09:55.070+08:00  INFO 12172 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T08:09:55.143+08:00  INFO 12172 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T08:09:55.230+08:00  INFO 12172 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:09:55.275+08:00  INFO 12172 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T08:09:55.307+08:00  INFO 12172 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

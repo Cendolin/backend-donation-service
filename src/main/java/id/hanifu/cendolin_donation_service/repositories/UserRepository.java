@@ -9,4 +9,5 @@ import java.util.Optional;
 @org.springframework.stereotype.Repository
 public interface UserRepository extends JpaRepository<UserEntity, BigInteger> {
     public Optional<UserEntity> findByUserId(String userId);
+    boolean existsByUserId(String userId);
 }

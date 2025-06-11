@@ -1,13 +1,11 @@
 package id.hanifu.cendolin_donation_service.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import id.hanifu.cendolin_donation_service.annotations.ValidBigDecimal;
 import jakarta.annotation.Nullable;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.validator.constraints.Currency;
 
 import java.math.BigDecimal;
 
@@ -15,8 +13,7 @@ import java.math.BigDecimal;
 @Setter
 public class DonationDto {
     @JsonProperty("amount")
-    @NotBlank(message = "Amount cannot blank")
-    @Min(value = 100, message = "Amount must be greather than 100")
+    @ValidBigDecimal(minValue = "100")
     private BigDecimal amount;
 
     @JsonProperty("donator_name")
@@ -33,11 +30,12 @@ public class DonationDto {
     private String donatorPhone;
 
     @JsonProperty("currency")
-    @Currency(message = "Currency must valid", value = {"IDR"})
+    @Pattern(regexp = "^[A-Z]{2,3}$", message = "Currency must be a valid 3-letter code")
     private String currency;
 
     @JsonProperty("message")
     @NotBlank(message = "Message cannot blank")
+    @Size(min = 3, max = 1000)
     private String message;
 
     @JsonProperty("payment_method")
