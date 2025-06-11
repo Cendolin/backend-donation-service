@@ -2,6 +2,7 @@ package id.hanifu.cendolin_donation_service.payments;
 
 import com.xendit.XenditClient;
 import com.xendit.exception.XenditException;
+import com.xendit.model.Invoice;
 import com.xendit.model.QRCode;
 import id.hanifu.cendolin_donation_service.dtos.TransactionDto;
 import id.hanifu.cendolin_donation_service.entities.DonationEntity;
@@ -34,21 +35,25 @@ public class XenditPayment implements Payment {
     @Override
     public Optional<TransactionEntity> pay(DonationEntity donationEntity) throws XenditException {
         String transactionId = UUID.randomUUID().toString();
-        QRCode qrCode = xenditClient.qrCode.createQRCode(
-                transactionId,
-                QRCode.QRCodeType.DYNAMIC,
-                donationEntity.getCurrency(),
-                donationEntity.getPrice()
-        );
+//        QRCode qrCode = xenditClient.qrCode.createQRCode(
+//                transactionId,
+//                QRCode.QRCodeType.DYNAMIC,
+//                donationEntity.getCurrency(),
+//                donationEntity.getPrice().intValue()
+//        );
+
+        Invoice invoice = xenditClient.invoice.create(transactionId, donationEntity.getPrice().intValue(), donationEntity.getDonatorEmail(), "Invoice Donate");
 
         TransactionDto dto = new TransactionDto();
         dto.setPrice(donationEntity.getPrice());
         dto.setCustomerName(donationEntity.getDonatorName());
+        dto.setQrisString(Optional.of("-"));
         dto.setCustomerEmail(donationEntity.getDonatorEmail());
-        dto.setPaymentGatewayUrl(Optional.empty());
-        dto.setQrisString(Optional.ofNullable(qrCode.getQrString()));
+        dto.setCustomerPhone(Optional.ofNullable(donationEntity.getDonatorPhone()));
+        dto.setPaymentGatewayUrl(Optional.ofNullable(invoice.getInvoiceUrl()));
+//        dto.setQrisString(Optional.ofNullable(qrCode.getQrString()));
 
-        TransactionEntity tx = transactionService.create(dto, donationEntity);
-        return Optional.ofNullable(tx);
+        TransactionEntity tx = this.transactionService.create(dto, donationEntity);
+        return Optional.of(tx);
     }
 }

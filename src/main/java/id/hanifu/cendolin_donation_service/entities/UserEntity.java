@@ -1,5 +1,7 @@
 package id.hanifu.cendolin_donation_service.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,11 +21,14 @@ import java.util.List;
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonProperty("id")
     private BigInteger id;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonIgnore
     private List<DonationEntity> donationEntities;
 
+    @JsonProperty("user_id")
     @Column(name = "user_id")
     @Setter
     private String userId;
@@ -32,15 +37,18 @@ public class UserEntity {
     @Setter
     private String email;
 
+    @JsonProperty("username")
     @Column(name = "username")
     @Setter
     private String username;
 
+    @JsonProperty("created_at")
     @Column(name = "created_at")
     @Setter
     @CreationTimestamp
     private Time createdAt;
 
+    @JsonProperty("updated_at")
     @UpdateTimestamp
     @Column(name = "updated_at")
     @Setter

@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.Optional;
 
 @Getter
 @Setter
@@ -27,9 +28,10 @@ public class DonationDto {
 
     @JsonProperty("donator_phone")
     @Nullable
-    private String donatorPhone;
+    private Optional<String> donatorPhone;
 
     @JsonProperty("currency")
+    @NotBlank(message = "Currency cannot blank")
     @Pattern(regexp = "^[A-Z]{2,3}$", message = "Currency must be a valid 3-letter code")
     private String currency;
 
