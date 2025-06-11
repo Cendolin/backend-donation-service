@@ -3114,3 +3114,123 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2025-06-11T09:56:49.831+08:00  INFO 12336 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-06-11T09:56:49.834+08:00  INFO 12336 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-06-11T09:56:49.857+08:00  INFO 12336 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T10:40:25.795+08:00  INFO 17684 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 17684 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T10:40:25.797+08:00  INFO 17684 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T10:40:26.421+08:00  INFO 17684 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T10:40:26.475+08:00  INFO 17684 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-06-11T10:40:26.987+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T10:40:26.999+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T10:40:26.999+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T10:40:27.045+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T10:40:27.045+08:00  INFO 17684 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1215 ms
+2025-06-11T10:40:27.186+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T10:40:27.263+08:00  INFO 17684 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T10:40:27.299+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T10:40:27.577+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T10:40:27.611+08:00  INFO 17684 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T10:40:27.987+08:00  INFO 17684 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a54c92e
+2025-06-11T10:40:27.989+08:00  INFO 17684 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T10:40:28.038+08:00  WARN 17684 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T10:40:28.055+08:00  INFO 17684 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T10:40:29.000+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T10:40:29.051+08:00  INFO 17684 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:40:30.403+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T10:40:30.407+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T10:40:30.624+08:00  INFO 17684 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7aa5292d:0/SimpleConnection@124e538e [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=64925]
+2025-06-11T10:40:30.770+08:00  INFO 17684 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 5.337 seconds (process running for 5.783)
+2025-06-11T10:41:21.715+08:00  INFO 17684 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T10:41:22.169+08:00  INFO 17684 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T10:41:22.182+08:00  INFO 17684 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T10:41:22.194+08:00  INFO 17684 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T10:41:22.206+08:00  INFO 17684 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:41:22.212+08:00  INFO 17684 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T10:41:22.234+08:00  INFO 17684 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T10:41:26.631+08:00  INFO 22432 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 22432 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T10:41:26.633+08:00  INFO 22432 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T10:41:27.271+08:00  INFO 22432 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T10:41:27.329+08:00  INFO 22432 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2025-06-11T10:41:27.832+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T10:41:27.846+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T10:41:27.846+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T10:41:27.906+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T10:41:27.907+08:00  INFO 22432 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1240 ms
+2025-06-11T10:41:28.065+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T10:41:28.133+08:00  INFO 22432 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T10:41:28.163+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T10:41:28.434+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T10:41:28.463+08:00  INFO 22432 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T10:41:28.799+08:00  INFO 22432 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76dc36e5
+2025-06-11T10:41:28.801+08:00  INFO 22432 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T10:41:28.840+08:00  WARN 22432 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T10:41:28.859+08:00  INFO 22432 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T10:41:30.064+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T10:41:30.105+08:00  INFO 22432 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:41:31.202+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T10:41:31.205+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T10:41:31.298+08:00  INFO 22432 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7aa5292d:0/SimpleConnection@9d455a6 [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=64971]
+2025-06-11T10:41:31.348+08:00  INFO 22432 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 5.082 seconds (process running for 5.517)
+2025-06-11T10:41:39.799+08:00  INFO 22432 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T10:41:39.800+08:00  INFO 22432 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T10:41:39.801+08:00  INFO 22432 --- [cendolin-donation-service] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T10:57:14.506+08:00  INFO 22432 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T10:57:15.204+08:00  INFO 22432 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T10:57:15.214+08:00  INFO 22432 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T10:57:15.232+08:00  INFO 22432 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T10:57:15.260+08:00  INFO 22432 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:57:15.276+08:00  INFO 22432 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T10:57:15.307+08:00  INFO 22432 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T10:57:21.928+08:00  INFO 12048 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Starting CendolinDonationServiceApplication using Java 21.0.2 with PID 12048 (C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service\build\classes\java\main started by Kyy in C:\Users\Kyy\Documents\cendolin-donation-service\cendolin-donation-service)
+2025-06-11T10:57:21.930+08:00  INFO 12048 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T10:57:22.589+08:00  INFO 12048 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T10:57:22.640+08:00  INFO 12048 --- [cendolin-donation-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-06-11T10:57:23.170+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T10:57:23.184+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T10:57:23.184+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T10:57:23.244+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T10:57:23.244+08:00  INFO 12048 --- [cendolin-donation-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1279 ms
+2025-06-11T10:57:23.411+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T10:57:23.484+08:00  INFO 12048 --- [cendolin-donation-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-11T10:57:23.519+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T10:57:23.803+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T10:57:23.838+08:00  INFO 12048 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T10:57:24.197+08:00  INFO 12048 --- [cendolin-donation-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a54c92e
+2025-06-11T10:57:24.199+08:00  INFO 12048 --- [cendolin-donation-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T10:57:24.241+08:00  WARN 12048 --- [cendolin-donation-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T10:57:24.261+08:00  INFO 12048 --- [cendolin-donation-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T10:57:25.183+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T10:57:25.226+08:00  INFO 12048 --- [cendolin-donation-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:57:26.410+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T10:57:26.414+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-06-11T10:57:26.541+08:00  INFO 12048 --- [cendolin-donation-service] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7aa5292d:0/SimpleConnection@892f1fa [delegate=amqp://guest@0:0:0:0:0:0:0:1:5672/, localPort=65348]
+2025-06-11T10:57:26.634+08:00  INFO 12048 --- [cendolin-donation-service] [main] i.h.c.CendolinDonationServiceApplication : Started CendolinDonationServiceApplication in 5.065 seconds (process running for 5.506)
+2025-06-11T10:58:28.113+08:00  INFO 12048 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T10:58:28.114+08:00  INFO 12048 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T10:58:28.116+08:00  INFO 12048 --- [cendolin-donation-service] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T10:58:47.220+08:00  INFO 12048 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-06-11T10:58:47.486+08:00  INFO 12048 --- [cendolin-donation-service] [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-06-11T10:58:47.489+08:00  INFO 12048 --- [cendolin-donation-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T10:58:47.514+08:00  INFO 12048 --- [cendolin-donation-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T10:58:47.522+08:00  INFO 12048 --- [cendolin-donation-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T10:58:47.524+08:00  INFO 12048 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T10:58:47.557+08:00  INFO 12048 --- [cendolin-donation-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

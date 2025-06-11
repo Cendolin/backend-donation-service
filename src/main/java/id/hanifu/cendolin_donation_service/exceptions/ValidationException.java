@@ -1,5 +1,6 @@
 package id.hanifu.cendolin_donation_service.exceptions;
 
+import id.hanifu.cendolin_donation_service.objects.ResponseObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.validation.FieldError;
@@ -14,7 +15,7 @@ import java.util.stream.Collectors;
 public class ValidationException {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<Map<String, Map<String, String>>> handleValidationErrors(
+    public ResponseEntity<ResponseObject<Map<String, String>>> handleValidationErrors(
             MethodArgumentNotValidException ex) {
         Map<String, String> errors = ex.getBindingResult()
                 .getFieldErrors()
@@ -24,14 +25,12 @@ public class ValidationException {
                         FieldError::getDefaultMessage,
                         (existing, replacement) -> existing
                 ));
+
+        ResponseObject<Map<String, String>> responseObject = new ResponseObject<>();
+        responseObject.setErrors(errors);
+
         return ResponseEntity
                 .badRequest()
-                .body(this.getErrorsMap(errors));
-    }
-
-    private Map<String, Map<String, String>> getErrorsMap(Map<String, String> errors) {
-        Map<String, Map<String, String>> errorResponse = new HashMap<>();
-        errorResponse.put("errors", errors);
-        return errorResponse;
+                .body(responseObject);
     }
 }

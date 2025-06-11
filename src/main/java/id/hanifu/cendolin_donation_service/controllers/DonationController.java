@@ -3,6 +3,7 @@ package id.hanifu.cendolin_donation_service.controllers;
 import id.hanifu.cendolin_donation_service.dtos.DonationDto;
 import id.hanifu.cendolin_donation_service.entities.DonationEntity;
 import id.hanifu.cendolin_donation_service.entities.TransactionEntity;
+import id.hanifu.cendolin_donation_service.objects.ResponseObject;
 import id.hanifu.cendolin_donation_service.services.DonationService;
 import id.hanifu.cendolin_donation_service.services.TransactionService;
 import id.hanifu.cendolin_donation_service.services.UserService;
@@ -32,7 +33,7 @@ public class DonationController {
     }
 
     @PostMapping(value = "/{userId}")
-    public ResponseEntity<DonationEntity> createDonation(
+    public ResponseEntity<ResponseObject<DonationEntity>> createDonation(
             @PathVariable(name = "userId") String userId,
             @RequestBody @Valid DonationDto donationDto
     ) {
@@ -43,20 +44,26 @@ public class DonationController {
         Optional<DonationEntity> donationEntity = this.donationService.create(userId, donationDto);
         if (donationEntity.isPresent()) {
             DonationEntity donation = donationEntity.get();
-            return ResponseEntity.ok().body(donation);
+            ResponseObject<DonationEntity> donationEntityResponseObject = new ResponseObject<>();
+            donationEntityResponseObject.setData(donation);
+
+            return ResponseEntity.ok(donationEntityResponseObject);
         }
 
         return ResponseEntity.internalServerError().build();
     }
 
     @GetMapping("/trx/{trxId}")
-    public ResponseEntity<TransactionEntity> getTransaction(
+    public ResponseEntity<ResponseObject<TransactionEntity>> getTransaction(
             @PathVariable("trxId") String trxId
     ) {
         Optional<TransactionEntity> transactionEntity = this.transactionService.get(trxId);
         if (transactionEntity.isPresent()) {
             TransactionEntity transaction = transactionEntity.get();
-            return ResponseEntity.ok().body(transaction);
+            ResponseObject<TransactionEntity> transactionEntityResponseObject = new ResponseObject<>();
+            transactionEntityResponseObject.setData(transaction);
+
+            return ResponseEntity.ok().body(transactionEntityResponseObject);
         }
 
         return ResponseEntity.notFound().build();
